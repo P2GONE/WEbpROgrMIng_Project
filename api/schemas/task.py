@@ -1,5 +1,7 @@
 from pydantic import BaseModel,Field
 
+#DB 모음집
+
 class TaskBase(BaseModel):
     title : str | None = Field(None, example="안녕하세요")
 
