@@ -24,6 +24,17 @@ def get_tasks_with_done(db: Session)->list[tuple[int,str]]:
         select(
             task_model.Task.id,
             task_model.Task.title,
+            task_model.Task.crno,
+            task_model.Task.year, 
+            task_model.Task.enpSaleAmt,
+            task_model.Task.enpBzopPft,
+            task_model.Task.iclsPalClcAmt,
+            task_model.Task.enpCrtmNpf,
+            task_model.Task.enpTastAmt,
+            task_model.Task.enpTdbtAmt,
+            task_model.Task.enpTcptAmt,
+            task_model.Task.enpCptlAmt,
+            task_model.Task.fnclDebtRto,
         )
     )
     
